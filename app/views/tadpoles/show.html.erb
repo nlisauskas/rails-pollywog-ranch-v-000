@@ -4,7 +4,7 @@
   <!-- make form to make "Become a frog" button here -->
   <!-- the form should post to /tadpoles/:id/metamorphosize -->
   <%= form_tag(metamorphose_path(@tadpole.id)) do %>
-  <%= submit_tag "Become a frog", "Become a frog" %>
+  <%= submit_tag "Become a frog" %>
   <% end %>
 
   <p>Color: <%= @tadpole.color %></p>
