@@ -47,7 +47,7 @@ class TadpolesController < ApplicationController
     end
   end
 
-  def metamorphose
+  def metamorphosize
     
   end
 
