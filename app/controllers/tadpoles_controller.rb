@@ -52,6 +52,7 @@ class TadpolesController < ApplicationController
     frog.name = @tadpole.name
     frog.color = @tadpole.color
     frog.pond = @tadpole.pond
+    frog.save
   end
 
   private
