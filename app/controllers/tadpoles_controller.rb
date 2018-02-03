@@ -48,7 +48,11 @@ class TadpolesController < ApplicationController
   end
 
   def metamorphose
-    
+    found_by_name = Frog.find_by(:name => @tadpole.name)
+    found_by_color = Frog.find_by(:color => @tadpole.color)
+    @tadpole.name = found_by_color.name
+    @tadpole.color = found_by_name.color
+    @tadpole.pond = found_by_name.pond
   end
 
   private
