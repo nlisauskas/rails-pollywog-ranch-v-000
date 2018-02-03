@@ -3,7 +3,7 @@
 
   <!-- make form to make "Become a frog" button here -->
   <!-- the form should post to /tadpoles/:id/metamorphosize -->
-  <%= form_for @tadpole do |f| %>
+  <%= form_tag(metamorphose_path(@tadpole.id)) do %>
   <%= f.submit, "Become a frog" %>
   <% end %>
 
