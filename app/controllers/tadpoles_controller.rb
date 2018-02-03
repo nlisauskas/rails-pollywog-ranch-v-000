@@ -54,6 +54,7 @@ class TadpolesController < ApplicationController
     frog.pond = @tadpole.pond
     frog.save
     @tadpole.destroy
+    redirect_to frog_path(frog)
   end
 
   private
