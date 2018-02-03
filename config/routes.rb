@@ -14,7 +14,7 @@ Rails.application.routes.draw do
   # resources
   resources :ponds
 
-  resources :tadpoles, :only => [:index, :show, :edit, :update, :destroy, :metamorphosize, ,:metamorphose, :create]
+  resources :tadpoles, :only => [:index, :show, :edit, :update, :destroy, :metamorphosize,:metamorphose, :create]
 
   # nested resources
   resources :frogs do
