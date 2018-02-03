@@ -1,5 +1,5 @@
 class TadpolesController < ApplicationController
-  before_action :set_tadpole, only: [:show, :edit, :update, :destroy, :metamorphosize]
+  before_action :set_tadpole, only: [:show, :edit, :update, :destroy, :metamorphosize, :metamorphose]
 
   # add your metamorphosize action here
 
@@ -48,6 +48,7 @@ class TadpolesController < ApplicationController
   end
 
   def metamorphose
+    set_tadpole
 
   end
 
